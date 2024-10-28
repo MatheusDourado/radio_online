@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rádio Online MVP</title>
+		<link rel="stylesheet" href="src/style/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<main class="radio-container">
+				<div class="music-circle" id="musicCircle">
+					<div class="overlay" id="overlay">
+						<h2 id="songTitle">Título da Música</h2>
+						<h3 id="artistName">Artista</h3>
+						<p id="songYear">Ano</p>
+					</div>
+				</div>
+			</main>
+
+			<!-- Seletor de Músicas como aside -->
+			<aside class="music-selector">
+				<input
+					type="text"
+					id="searchQuery"
+					placeholder="Buscar música no Jamendo..."
+				/>
+				<button id="searchButton">Buscar</button>
+				<ul id="tracksList"></ul>
+			</aside>
+		</div>
+
+		<!-- Elemento de áudio -->
+		<audio id="audio" crossorigin="anonymous"></audio>
+
+		<script src="src/js/script.js"></script>
+	</body>
+</html>
